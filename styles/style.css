@@ -1,0 +1,125 @@
+/* ======= ESTILOS GENERALES ======= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #e9f5ec, #ccebd4);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #1e4620;
+}
+
+header {
+    background-color: #2e8b57; /* Verde selva */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* ======= BOTONES ======= */
+.boton {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #43a047; /* Verde medio */
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.boton:hover {
+    background-color: #2e7d32; /* Verde más oscuro */
+    transform: scale(1.1);
+}
+
+/* ======= TABLA ======= */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(46, 139, 87, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #a5d6a7;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2e8b57;
+    color: white;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8f4;
+}
+
+tr:hover {
+    background-color: #d0ecd8;
+    transition: background 0.3s;
+}
+
+/* ======= GALERÍA ======= */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.galeria figure {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(76, 175, 80, 0.3);
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ======= ANIMACIÓN BOTONES ======= */
+.animado {
+    animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-5px); }
+}
